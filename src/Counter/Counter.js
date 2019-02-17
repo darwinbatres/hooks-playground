@@ -15,7 +15,9 @@ const Counter = () => {
   return (
     <div>
       <p>Count: {counterState.count}</p>
-      <CounterContext.Provider value={{ dispatch, increase, decrease }}>
+      <CounterContext.Provider
+        value={{ dispatch, increase, decrease, counterState }}
+      >
         <Increase />
         <Decrease />
       </CounterContext.Provider>

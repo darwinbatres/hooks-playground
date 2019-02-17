@@ -1,6 +1,7 @@
 import React from "react";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
 import Counter from "./Counter/Counter";
+import Totals from "./Totals/Totals";
 
 const theme = createMuiTheme({
   // palette: {
@@ -19,6 +20,7 @@ const App = () => (
   <MuiThemeProvider theme={theme}>
     <p>Hello from App Component!</p>
     <Counter />
+    <Totals />
   </MuiThemeProvider>
 );
 

@@ -3,11 +3,11 @@ import Button from "@material-ui/core/Button";
 import CounterContext from "./CounterContext";
 
 const Increase = () => {
-  const { increase } = useContext(CounterContext);
+  const { increase, counterState } = useContext(CounterContext);
 
   return (
     <Button variant="contained" color="primary" onClick={increase}>
-      Increase +
+      Increase + [{counterState.count}]
     </Button>
   );
 };
