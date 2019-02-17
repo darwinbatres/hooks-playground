@@ -1,0 +1,30 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clear:cache": "rimraf .cache dist",
+    "predev": "npm run clear:cache",
+    "dev": "parcel src/index.html",
+    "prebuild": "npm run clear:cache",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.14.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "parcel-bundler": "^1.11.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "rimraf": "^2.6.3"
+  }
+}
